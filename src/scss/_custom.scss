@@ -1,0 +1,16 @@
+$rojo: #F34F51;
+$azul: #0098AE;
+$oscuro: #212121;
+$gris:#8c8b8c;
+
+$primary: $rojo;
+$secondary: $azul;
+$dark: $oscuro;
+$info: $gris;
+
+
+//Tipografia
+$display-font-weight: 900;
+
+//Importar Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

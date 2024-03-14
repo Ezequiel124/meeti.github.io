@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeti</title>
+    <meta name="description" content="Meeti y aprendiendo bootsrap 5 y SASS.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <!--Antes de iniciar con SASS, Generar un archivo json nuevo en nueva terminal usando npm init-->
+    <!--npm i --save-dev bootstrap sass para instalar dependencias-->
+    <!-- 
+        Ver la zona de scrips en package.json y modificar como esta
+    -->
+    <!-- <link rel="stylesheet" href="build/css/style.css"> -->
+    <link rel="stylesheet" href="build/css/meeti.css">
+</head>
+<body>
+    <header class="container-xl header mx-5">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <img src="/img/logo.svg" alt="meeti" class="logo">
+                <h2 class="display-3 ">Unete, la vida esta en un Meeti</h2>
+                <p>Únete a mas de 300 mil organizadores que están compartiendo su pasión 
+                    y construyendo una comunidad</p>                
+                <a href="#" class="btn btn-danger mb-4 mb-md-4" type="button">Inicia un grupo</a>
+            </div>
+            <div class="col-md-6"><img src="/img/header.jpg" alt="header" class="img-fluid"></div>
+        </div>        
+    </header>    
+                
+    <section class="container-xl">
+        <h2 class="text-center display-6">Como funciona Meeti</h2>
+        <p class="text-center w-50 mx-auto">Conoce a personas nuevas que compartan tus intereses a traves de eventos en linea y en 
+            persona. Crear una cuenta es gratis.</p>
+    </section>
+
+    <section class="container-xl">
+        <div class="row text-center justify-content-center">
+            <div class="col-md-4 my-3">
+                <img src="img/icono_1.svg" alt="icon_image_1" class="img-fluid">
+                <h3 class="text-secondary">Únete a un grupo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus error quidem facilis vel, sapiente impedit debitis reprehenderit</p>
+            </div>
+            <div class="col-md-4 my-3">
+                <img src="img/icono_2.svg" alt="icon_image_2" class="img-fluid">
+                <h3 class="text-secondary">Administra asistentes</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus error quidem facilis vel, sapiente impedit debitis reprehenderit</p>
+            </div>
+            <div class="col-md-4 my-3">
+                <img src="img/icono_3.svg" alt="icon_image_3" class="img-fluid">
+                <h3 class="text-secondary">Crece tu comunidad</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus error quidem facilis vel, sapiente impedit debitis reprehenderit</p>
+            </div>            
+        </div>    
+        <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-secondary">Unirse a Meeti</a>
+        </div>             
+    </section>         
+       
+    <main class="container-xl my-5 eventos">
+        <div class="d-flex justify-content-between">
+            <h2 class="fs-4 fw-bold">Proximos Eventos</h2>
+            <a href="#" class="text-decoration-none text-secondary">Explora mas eventos</a>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 ">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <img src="/img/evento_1.jpg" alt="evento1" class="card-img-top">
+                        <p class="card-text">10 de Diciembre de 2022 20:00 horas</p>
+                        <h3 class="card-title">Diseño de apps con Swift</h3>
+                        <p class="card-text descripcion ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero id cupiditate tempora repellendus</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <img src="/img/evento_2.jpg" alt="evento2" class="card-img-top">
+                        <p class="card-text">10 de Diciembre de 2022 20:00 horas</p>
+                        <h3 class="card-title">Marketting en Twitter</h3>
+                        <p class="card-text descripcion ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero id cupiditate tempora repellendus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <img src="/img/evento_3.jpg" alt="evento3" class="card-img-top">
+                        <p class="card-text">10 de Diciembre de 2022 20:00 horas</p>
+                        <h3 class="card-title">Ventas por internet</h3>
+                        <p class="card-text descripcion ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero id cupiditate tempora repellendus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <img src="/img/evento_4.jpg" alt="evento4" class="card-img-top">
+                        <p class="card-text">10 de Diciembre de 2022 20:00 horas</p>
+                        <h3 class="card-title">Todo sobre Bitcoin</h3>
+                        <p class="card-text descripcion ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero id cupiditate tempora repellendus</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="container-xl">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/app_1.png" alt="imagen app" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="img/logo.svg" alt="imagen app" class="img-fluid app_meeti mx-auto d-flex "> <!-- mx-auto pertenece a d-flex --> 
+                <h2 class="fw-bold fs-4 text-center">Mantente conectado. Descarga la 
+                    aplicacion
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/tienda-android.svg" alt="imagen app" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/tienda-apple.svg" alt="imagen app" class="img-fluid">      
+                    </div>
+                </div>                
+            </div>
+            <div class="col-md-4">
+                <img src="img/app_2.png" alt="imagen app" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark">
+        <div class="container-xl">
+            <div class="row px-5 ">
+                <div class="col-md-3 border-bottom">
+                    <p class="text-white my-4 fw-bold">Crea tu propio grupo de meeti</p>                    
+                </div>
+                <div class="col-md-3 border-bottom">                    
+                    <a href="#" type="button" class="btn btn-dark my-3 fw-bold border">Primeros Pasos</a>
+                </div>
+                <div class="col-md-6 border-bottom"></div>
+            </div>  
+
+            <div class="row px-5 pb-4 pt-3">
+                <div class="col-md-4">
+                    <div class="mb-3"><h4 class="text-white">Tu Cuenta</h4></div>
+                    <div class="my-2"><a href="#" class="text-decoration-none text-info">Registrarse</a><br></div>
+                    <div class="mb-2"><a href="#" class="text-decoration-none text-info">Iniciar sesion</a><br></div>
+                    <div class="mb-2"><a href="#" class="text-decoration-none text-info">Ayuda</a><br></div>                                                        
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3"><h4 class="text-white">Descubrir</h4></div>
+                    <div class="my-2"><a href="#" class="text-decoration-none text-info">Grupos</a><br></div>
+                    <div class="mb-2"><a href="#" class="text-decoration-none text-info">Calendario</a><br></div>
+                    <div class="mb-2"><a href="#" class="text-decoration-none text-info">Temas</a><br></div>                                                        
+                    <div class="mb-2"><a href="#" class="text-decoration-none text-info">Ciudades</a><br></div>                                                        
+                    <div class="mb-2"><a href="#" class="text-decoration-none text-info">Eventos en línea</a><br></div>                                                        
+                    <div class="mb-2"><a href="#" class="text-decoration-none text-info">Guías Locales</a><br></div>                                                        
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3"><h4 class="text-white">Meeti</h4></div>
+                    <div class="my-2"><a href="#" class="text-decoration-none text-info">Acerca de</a><br></div>
+                    <div class="mb-2"><a href="#" class="text-decoration-none text-info">Blog</a><br></div>
+                    <div class="mb-2"><a href="#" class="text-decoration-none text-info">Meeti PRO</a><br></div>                                                        
+                    <div class="mb-2"><a href="#" class="text-decoration-none text-info">Empleo</a><br></div>                                                        
+                    <div class="mb-2"><a href="#" class="text-decoration-none text-info">Aplicaciones</a><br></div>                                                        
+                </div>
+
+            </div>          
+        </div>        
+    </footer>
+</body>
+</html>
